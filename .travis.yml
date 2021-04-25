@@ -15,7 +15,8 @@ jobs:
       name: "Build"
       script: 
       - docker build -t flask-api:latest .
+      - docker run -i -p 5000:5000 flask-api
     - stage: test
       script: 
-      - docker run -i -p 5000:5000 flask-api
+      - test.py
 
