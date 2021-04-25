@@ -16,4 +16,4 @@ COPY . /app
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "api.py" ]
+CMD [ "nohup python3 api.py > log.txt 2>&1 &" ]
