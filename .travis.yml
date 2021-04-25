@@ -17,8 +17,5 @@ jobs:
       - docker build -t flask-api:latest .
     - stage: test
       script: 
-      - ls
-      - cd $TRAVIS_BUILD_DIR
-      - ls
-      - sh Test.sh
+      - docker run -i -p 5000:5000 flask-api
 
