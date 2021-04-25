@@ -59,4 +59,4 @@ def api_healthcheck():
 	return str(requests.get('http://127.0.0.1:5000/' + url).status_code)
 	
 
-app.run(host="0.0.0.0")
+app.run(threaded=True, host="0.0.0.0")
