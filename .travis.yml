@@ -13,7 +13,6 @@ jobs:
   include:
     - stage: build
       name: "Build"
-      env: ISOLATED=true
       script: 
       - docker build -t flask-api:latest .
     - stage: test
