@@ -14,6 +14,10 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
+ENTRYPOINT [ "/bin/bash" ]
+
+CMD [ "start.sh" ]
+
 ENTRYPOINT [ "python" ]
 
-CMD [ "nohup python3 api.py > log.txt 2>&1 &" ]
+CMD [ "test.py" ]
