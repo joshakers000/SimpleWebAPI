@@ -16,5 +16,5 @@ jobs:
       script: 
       - docker build -t flask-api:latest .
     - stage: test
-      script: bash ~/Test.sh
+      script: bash Test.sh
 
