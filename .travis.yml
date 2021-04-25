@@ -17,6 +17,6 @@ jobs:
       - docker build -t flask-api:latest .
       - docker run -i -p 5000:5000 flask-api
     - stage: test
-      name: "test"
+      name: "testing"
       - python3 test.py
 
