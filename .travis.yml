@@ -18,5 +18,5 @@ jobs:
       - docker build -t flask-api:latest .
     - stage: test
       env: ISOLATED=true
-      script: ./Test.sh
+      script: Test.sh
 
