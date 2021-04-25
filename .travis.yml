@@ -10,9 +10,14 @@ before_script: pip install docker-compose
 jobs:
   include:
     - stage: build
+      name: "Build"
+      env: ISOLATED=true
       script: 
       - docker build -t flask-api:latest .
       - docker run -i -p 5000:5000 flask-api
     - stage: test
+      env: ISOLATED=true
       script: python3 test.py
+    allow_failures:
+    - name: "Build"
 
