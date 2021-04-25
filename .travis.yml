@@ -10,4 +10,6 @@ before_script: pip install docker-compose
 script:
  - docker build -t flask-api:latest .
  - docker run -i -p 5000:5000 flask-api
+
+script:
  - python3 test.py
