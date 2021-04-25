@@ -5,7 +5,9 @@ python:
 services:
   - docker
 
-before_script: pip install docker-compose
+before_script: 
+- pip install docker-compose
+- chmod +x Test.sh
 
 jobs:
   include:
