@@ -17,7 +17,3 @@ COPY . /app
 ENTRYPOINT [ "/bin/bash" ]
 
 CMD [ "start.sh" ]
-
-ENTRYPOINT [ "python" ]
-
-CMD [ "test.py" ]
