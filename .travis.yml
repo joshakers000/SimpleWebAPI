@@ -20,5 +20,5 @@ jobs:
       - ls
       - cd $TRAVIS_BUILD_DIR
       - ls
-      - bash Test.sh
+      - sh Test.sh
 
