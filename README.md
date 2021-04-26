@@ -16,9 +16,22 @@ A simple web api built using flask and python for a tech challenge that can be d
 sudo docker build -t flask-api:latest .
 sudo docker run -i -p 5000:5000 flask-api
 ```
+Anticipated output:
+```
+* Serving Flask app "api" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 181-356-883
+```
+If you see this, the api should be running!
 
 # Local Test
-Open new terminal window and navigate to cloned repository
+Open new terminal window (DO NOT CLOSE TERMINAL WINDOW WITH API RUNNING) and navigate to cloned repository
 ```
 python3 localTest.py
 ```
