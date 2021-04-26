@@ -47,6 +47,9 @@ If any of the output is a zero, this means a test has failed.
 Root: / 
 - Hello World!
 
+Metadata: /info
+- Returns information about the application.
+
 Shapes: /api/resources/shapes/all
 - Returns all shapes.
 
