@@ -1,4 +1,5 @@
 Flask==1.1.2
+gunicorn==19.9.0
 chardet2
 urllib3
 requests
