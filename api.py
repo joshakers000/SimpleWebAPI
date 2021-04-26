@@ -22,11 +22,24 @@ shapes = [
      'sides': '3'}
 
 		]
+#Add metadata endpoint info
+info = {
+	"MyApplication": [
+	{
+	  "version": "1.0",
+	  "description": "pre-interview technical assessment"
+	  }
+  ]
+}
 
 
 @app.route('/', methods=['GET'])
 def home():
 	return "<h1> Hello World! <h1>"
+
+@app.route('/info', methods=['GET'])
+def metdata():
+	return jsonify(info)
 
 
 @app.route('/api/resources/shapes/all', methods=['GET'])
