@@ -26,7 +26,7 @@ Anticipated output:
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 181-356-883
+ * Debugger PIN: ###-###-###
 ```
 If you see this, the api should be running!
 
