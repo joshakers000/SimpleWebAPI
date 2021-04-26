@@ -86,3 +86,16 @@ App is currently deployed and running at https://web-api000.herokuapp.com/
 - - This is a file for Travis CI which checks for pushes to the repository and will test the application.
 - - A sleep is included to allow the application to be deployed onto Heroku first.  
 - - test.py will commence testing against the application deployed on Heroku.  
+
+
+# Deployment Risks
+- Travis CI is assuming that the build will be successfully pushed to Heroku and does not check if this is the case.
+- - If Heroku did not rebuild and deploy the application for whatever reason, the tests from Travis CI would be deployed against the old build version on Heroku.
+- - This would result in tests not being conducted on the current version of the build.  
+
+# Application Risks
+- Because the application does not use a database, there shouldn't be any need for sanitation or validation.
+- Attempted directory traversal on variable endpoints and couldn't get the attack to work.
+- - Using ../ only reverts the request back to the root endpoint. 
+- - It doesn't appear that the application is vulnerable to directory traversal attacks, although I could definitely be wrong.  
+- All data is accessible within the application - this assumes that all data *should* be accessible.
