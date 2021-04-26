@@ -1,6 +1,8 @@
 import flask
 import requests
 from flask import request, jsonify
+import os
+port = int(os.environ.get(“PORT”, 5000))
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -59,4 +61,4 @@ def api_healthcheck():
 	return str(requests.get('http://127.0.0.1:5000/' + url).status_code)
 	
 
-app.run(threaded=True, host="0.0.0.0", port=5000)
+app.run(threaded=True, host="0.0.0.0", port=port)
