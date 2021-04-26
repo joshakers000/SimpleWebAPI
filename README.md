@@ -1,9 +1,14 @@
 # SimpleWebAPI
-A simple web api built using flask and python for a tech challenge.
+A simple web api built using flask and python for a tech challenge that can be deployed locally via Docker or on Heroku via Docker.
 
 # Requirements:
 - Docker
+- pip3
 - Python3
+- chardet2
+- urllib3
+- requests
+
 
 
 # Docker Deployment
@@ -11,6 +16,8 @@ A simple web api built using flask and python for a tech challenge.
 sudo docker build -t flask-api:latest .
 sudo docker run -i -p 5000:5000 flask-api
 ```
+
+# Local Test
 Open new terminal window and navigate to cloned repository
 ```
 python3 localTest.py
@@ -21,6 +28,7 @@ Anticipated output:
 1
 1
 ```
+If any of the output is a zero, this means a test has failed.
 
 # Endpoints
 Root: / 
