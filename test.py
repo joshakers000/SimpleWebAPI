@@ -3,7 +3,7 @@ import requests
 
 
 #vars
-home = "http://127.0.0.1:5000/"
+home = "https://web-api000.herokuapp.com/"
 health = home + "healthcheck?"
 #Test 1, health check something that works
 def healthtests():
