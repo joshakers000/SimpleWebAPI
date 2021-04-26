@@ -1,13 +1,15 @@
 # SimpleWebAPI
 A simple web api built using flask and python for a tech challenge that can be deployed locally via Docker or on Heroku via Docker.
 
-# Requirements:
+# Requirements to build:
 - Docker
-- pip3
-- Python3
-- chardet2
-- urllib3
-- requests
+
+# Requirements to test locally:
+- pip3 
+- Python3 
+- chardet2 
+- urllib3 
+- requests 
 
 
 
@@ -30,6 +32,8 @@ Anticipated output:
 ```
 If you see this, the api should be running!
 
+
+
 # Local Test
 Open new terminal window (DO NOT CLOSE TERMINAL WINDOW WITH API RUNNING) and navigate to cloned repository
 ```
@@ -43,7 +47,7 @@ Anticipated output:
 ```
 If any of the output is a zero, this means a test has failed.
 
-# Endpoints
+# API Endpoints
 Root: / 
 - Hello World!
 
@@ -99,3 +103,23 @@ App is currently deployed and running at https://web-api000.herokuapp.com/
 - - Using ../ only reverts the request back to the root endpoint. 
 - - It doesn't appear that the application is vulnerable to directory traversal attacks, although I could definitely be wrong.  
 - All data is accessible within the application - this assumes that all data *should* be accessible.
+
+# Files 
+- api.py
+- - Used for running the Flask API.
+- Dockerfile
+- - Used for building Docker container
+- heroku.yml
+- - Configuration file for heroku app.
+- localTest.py
+- - Python script for testing the api locally against the local host.
+- Procfile
+- - Used for instructing Heroku app to deploy actions on app startup.
+- README.md
+- - A guide that will hopefully explain everything you need to know about this application.
+- requirements.txt
+- - A file used by Dockerfile to build the container.
+- test.py
+- - A testing script used to test against the heroku app.
+- .travis.yml
+- - Used for kicking off Travis CI.
