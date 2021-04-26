@@ -80,9 +80,9 @@ App is currently deployed and running at https://web-api000.herokuapp.com/
 
 
 # Pipleline Functionality
-- Procfile
+- Procfile (Heroku CD)
 - - This is a file used for deploying the application to Heroku which checks for updates on the master branch.  
-- .travis.yml
-- - This is a file for Travis CI which checks for pushes to the repository and will build out the application.
+- .travis.yml (Travis CI)
+- - This is a file for Travis CI which checks for pushes to the repository and will test the application.
 - - A sleep is included to allow the application to be deployed onto Heroku first.  
 - - test.py will commence testing against the application deployed on Heroku.  
