@@ -96,6 +96,8 @@ App is currently deployed and running at https://web-api000.herokuapp.com/
 - Travis CI is assuming that the build will be successfully pushed to Heroku and does not check if this is the case.
 - - If Heroku did not rebuild and deploy the application for whatever reason, the tests from Travis CI would be deployed against the old build version on Heroku.
 - - This would result in tests not being conducted on the current version of the build.  
+- Testing should exit if output results in a zero but it doesn't, this would result in failed testing being pushed out to production.
+- - If one test fails all should fail in this scenario though, however I am aware this would need to be fixed.
 
 # Application Risks
 - Because the application does not use a database, there shouldn't be any need for sanitation or validation.
