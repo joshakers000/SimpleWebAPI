@@ -105,21 +105,21 @@ App is currently deployed and running at https://web-api000.herokuapp.com/
 - All data is accessible within the application - this assumes that all data *should* be accessible.
 
 # Files 
-- api.py
-- - Used for running the Flask API.
-- Dockerfile
-- - Used for building Docker container
-- heroku.yml
-- - Configuration file for heroku app.
-- localTest.py
-- - Python script for testing the api locally against the local host.
-- Procfile
-- - Used for instructing Heroku app to deploy actions on app startup.
-- README.md
-- - A guide that will hopefully explain everything you need to know about this application.
-- requirements.txt
-- - A file used by Dockerfile to build the container.
-- test.py
-- - A testing script used to test against the heroku app.
-- .travis.yml
-- - Used for kicking off Travis CI.
+ api.py
+ - Used for running the Flask API.
+ Dockerfile
+ - Used for building Docker container
+ heroku.yml
+ - Configuration file for heroku app.
+ localTest.py
+ - Python script for testing the api locally against the local host.
+ Procfile
+ - Used for instructing Heroku app to deploy actions on app startup.
+ README.md
+ - A guide that will hopefully explain everything you need to know about this application.
+ requirements.txt
+ - A file used by Dockerfile to build the container.
+ test.py
+ - A testing script used to test against the heroku app.
+ .travis.yml
+ - Used for kicking off Travis CI.
