@@ -59,7 +59,7 @@ def api_healthcheck():
 		url = request.args['url']
 	else:
 		return "Error: No url field provided.  Please provide a url to check health."
-	return str(requests.get('http://127.0.0.1:5000/' + url).status_code)
+	return str(requests.get('http://127.0.0.1:' + port + '/' + url).status_code)
 	
 
 app.run(threaded=True, host="0.0.0.0", port=port)
