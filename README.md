@@ -40,3 +40,8 @@ Shape: /api/resources/shapes?id=
 ```
 Healthy: /healthcheck?url=
 - Can check any URL within the application and it will return the proper status code.
+
+
+# Heroku
+App is currently deployed and running at https://web-api000.herokuapp.com/
+
