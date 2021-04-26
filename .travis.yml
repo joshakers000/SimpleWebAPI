@@ -2,22 +2,12 @@ language: python
 python:
   - "3.6"
 
-services:
-  - docker
-
-before_script: pip install docker-compose
-
 jobs:
   include:
     - stage: build
-      name: "Build"
-      env: ISOLATED=true
+      name: "Wait for heroku to finish"
       script: 
-      - docker build -t flask-api:latest .
-      - docker run -i -p 5000:5000 flask-api
+      - sleep 150
     - stage: test
-      env: ISOLATED=true
       script: python3 test.py
-    allow_failures:
-    - name: "Build"
 
