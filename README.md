@@ -49,8 +49,8 @@ Healthy: /healthcheck?url=
 # Heroku
 App is currently deployed and running at https://web-api000.herokuapp.com/
 - Query app on heroku
-''' https://web-api000.herokuapp.com<endpoint> '''
+``` https://web-api000.herokuapp.com<endpoint> ```
 
 # Local Queries
-''' curl http://127.0.0.1:5000<endpoint> '''
+``` curl http://127.0.0.1:5000<endpoint> ```
 
