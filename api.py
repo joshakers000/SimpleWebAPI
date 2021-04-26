@@ -2,7 +2,8 @@ import flask
 import requests
 from flask import request, jsonify
 import os
-port = int(os.environ.get(“PORT”, 5000))
+port = int(os.environ.get("PORT", 5000))
+
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
